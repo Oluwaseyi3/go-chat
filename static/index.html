@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Go Chat App</title>
+    <style>
+        #messages { border: 1px solid #ccc; height: 300px; overflow-y: scroll; margin-bottom: 10px; padding: 10px; }
+        #message-input, #room-input, #username-input { width: 80%; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Go Chat</h1>
+    <div id="login-form">
+        <input type="text" id="username-input" placeholder="Enter username">
+        <button onclick="login()">Login</button>
+    </div>
+    <div id="chat-form" style="display: none;">
+        <input type="text" id="room-input" placeholder="Enter room name">
+        <input type="text" id="message-input" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+        <div id="messages"></div>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>
